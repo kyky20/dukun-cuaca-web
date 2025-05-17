@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mbah Dukun Cuaca</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-theme">
+    <div class="container">
+        <header>
+            <h1>Mbah Dukun Cuaca</h1>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn">
+                    <i class="fas fa-moon"></i>
+                    <span>Mode Gelap</span>
+                </button>
+            </div>
+        </header>
+
+        <div class="search-container">
+            <form id="search-form">
+                <input type="text" id="city-input" placeholder="Masukkan nama kota..." required>
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <div class="weather-container" id="weather-container">
+            <div class="current-weather">
+                <div class="weather-header">
+                    <h2>Cuaca Saat Ini</h2>
+                    <p id="location">-</p>
+                    <p id="date-time">-</p>
+                </div>
+                <div class="weather-info">
+                    <div class="weather-icon">
+                        <img id="weather-icon" src="" alt="Weather Icon">
+                    </div>
+                    <div class="weather-details">
+                        <div class="temperature">
+                            <h3 id="temperature">-°C</h3>
+                            <p id="weather-description">-</p>
+                        </div>
+                        <div class="details">
+                            <div class="detail-item">
+                                <i class="fas fa-temperature-high"></i>
+                                <span>Terasa seperti: </span>
+                                <span id="feels-like">-°C</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tint"></i>
+                                <span>Kelembaban: </span>
+                                <span id="humidity">-%</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-wind"></i>
+                                <span>Kecepatan Angin: </span>
+                                <span id="wind-speed">- km/h</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-compress-arrows-alt"></i>
+                                <span>Tekanan: </span>
+                                <span id="pressure">- hPa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-container">
+                <h2>Mbah Dukun Prediksi Cuaca 5 Hari Ke Depan</h2>
+                <div class="forecast-cards" id="forecast-cards">
+                    <!-- Forecast cards will be generated here by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Memuat data cuaca...</p>
+        </div>
+
+        <div class="error-container" id="error-container">
+            <i class="fas fa-exclamation-circle"></i>
+            <p id="error-message">Terjadi kesalahan saat memuat data cuaca.</p>
+        </div>
+
+        <footer>
+            <p>Dibuat dengan niat coba-coba <i class="fas fa-heart"></i> | Data dari WeatherAPI.com</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
