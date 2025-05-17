@@ -1,8 +1,8 @@
-# dukun-cuaca-web
+# Dukun-cuaca-web
 # Dokumentasi
 
 ## Deskripsi
-Aplikasi Prediksi Cuaca Sederhana adalah aplikasi web yang menampilkan data cuaca real-time menggunakan API gratis. Aplikasi ini menampilkan informasi cuaca saat ini dan prediksi 5 hari ke depan untuk lokasi yang dipilih pengguna.
+Aplikasi Dukun Cuaca web adalah aplikasi web yang menampilkan data cuaca real-time menggunakan API gratis. Aplikasi ini menampilkan informasi cuaca saat ini dan prediksi 5 hari ke depan untuk lokasi yang dipilih pengguna.
 
 ## Fitur
 - Menampilkan data cuaca saat ini (suhu, kelembaban, kecepatan angin, tekanan)
